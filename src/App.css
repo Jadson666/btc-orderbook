@@ -1,0 +1,74 @@
+#root {
+  max-width: 1280px;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.price-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  min-height: 34px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  gap: 4px;
+}
+
+svg.r180deg {
+  transform: rotate(180deg);
+}
+
+.quote-header {
+  color: #8698aa;
+  white-space: nowrap;
+}
+
+.panel-grid {
+  display: grid;
+  align-items: center;
+  min-height: 260px;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  grid-auto-rows: 30px;
+  text-align: right;
+}
+
+.row-grid {
+  display: grid;
+  grid-template-columns: 70px 1fr 1fr;
+  gap: 2px;
+  transition: background-color 1s;
+}
+
+.row-grid > .size-cell {
+  margin-left: 30px;
+  padding: 0 10px;
+}
+
+.row-grid > .acc-size-cell {
+  padding: 0 10px;
+  margin-left: 10px;
+}
+
+.row-grid > .price-cell {
+  padding: 0 10px;
+}
+
+.orderbook-header {
+  text-align: left;
+  font-size: 18px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #8698aa78;
+  margin: 10px 0;
+}
+
+.highlight-row-sell {
+  background-color: rgba(255, 90, 90, 0.12);
+}
